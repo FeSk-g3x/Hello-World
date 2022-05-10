@@ -1,0 +1,124 @@
+html, body {
+    margin:0px;
+    height:100%;
+  }
+
+body  {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+.cabecalho {
+    padding: none;
+    background-color: rgb(56, 63, 63);
+    width: 100%;
+    height: 150px;
+}
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-width: 1px 1px;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(56, 63, 63);
+}
+
+.borda {
+    border-style: solid;
+    border-width: 1px 1px;
+    padding: 0px 0px 1px 0px;
+    color: rgb(246, 248, 249);
+    border-color: gray;
+}
+
+.button{
+    background-color: greenyellow;
+    border-style: solid;
+    border-width: 1px 1px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(246, 248, 249);
+}
+
+.alinhaButton {
+    text-align: right;
+}
+
+.tamCampo1 {
+    width:362px
+}
+
+.tamCampo2 {
+    width:346px
+}
+
+.tamCampo3 {
+    width:324px
+}
+
+.tamCampo4 {
+    width:355px
+}
+
+a.botao-animado:link,
+a.botao-animado:visited{
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 0.08em;
+    border-radius: 0;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+a.botao-animado:link:after,
+a.botao-animado:visited:after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: -1;
+    transition: all 0.75s ease 0s;
+}
+
+a.botao-animado:link:hover:after,
+a.botao-animado:visited:hover:after {
+    height: 450%;
+}
+
+a.botao-animado.um {
+    border: 2px solid #d24d57;
+    width: 200px;
+}
+
+a.botao-animado.um:after {
+    background: #d24d57;
+    transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+
+a.botao-animado.dois {
+    border: 2px solid #d24d57;
+    width: 200px;
+}
+
+a.botao-animado.dois:after {
+    background: #d24d57;
+    transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+
